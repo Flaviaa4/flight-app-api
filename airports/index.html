@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Search</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <h1>Search Airports</h1>
+    <p>Use filtering and sorting to search through available airports</p>
+  </header>
+  <nav id="main-nav">
+  <ul>
+    <li><a href="../index.html" id="nav-flights">Search Flight</a></li>
+    <li><a href="./index.html" id="nav-airports">Search Airports</a></li>
+  </ul>
+</nav>
+
+   <div class="container">
+        <div id="controls">
+  <input type="text" id="filterInput" placeholder="Filter by airport, city, or country..." />
+  <select id="sortDropdown">
+    <option value="airport_name-asc">Airport Name (A-Z)</option>
+    <option value="airport_name-desc">Airport Name (Z-A)</option>
+    <option value="country_name-asc">Country (A-Z)</option>
+    <option value="country_name-desc">Country (Z-A)</option>
+    <option value="iata_code-asc">IATA Code (A-Z)</option>
+    <option value="iata_code-desc">IATA Code (Z-A)</option>
+    <option value="city_iata_code-asc">City Code (A-Z)</option>
+    <option value="city_iata_code-desc">City Code (Z-A)</option>
+  </select>
+</div>
+<div id="results">
+
+</div>
+<div id="pagination"></div>
+   </div>
+
+  <script type="module" src="../js/search-airports.js"></script>
+
+</body>
+</html>

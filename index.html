@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Search</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  
+
+  <header>
+    <h1>Find Your Flight</h1>
+    <p>Search by airline, flight number, and travel details</p>
+  </header>
+  <nav id="main-nav">
+  <ul>
+    <li><a href="./index.html" id="nav-flights">Search Flight</a></li>
+    <li><a href="./airports/index.html" id="nav-airports">Search Airports</a></li>
+  </ul>
+</nav>
+
+  <div class="container">
+    <form id="flightForm">
+      <div class="form-group">
+        <label for="airline">Airline</label>
+        <input type="text" id="airline" name="airline" required placeholder="e.g. DL">
+      </div>
+      <div class="form-group">
+        <label for="flightNumber">Flight Number</label>
+        <input type="text" id="flightNumber" name="flightNumber" required placeholder="e.g. 1110">
+      </div>
+      <div class="form-group">
+        <label for="flightDate">Flight Date</label>
+        <input type="date" id="flightDate" name="flightDate" required>
+      </div>
+      <div class="form-group">
+        <label for="departure">Departure (IATA)</label>
+        <input type="text" id="departure" name="departure" required placeholder="e.g. JFK">
+      </div>
+      <div class="form-group">
+        <label for="arrival">Arrival (IATA)</label>
+        <input type="text" id="arrival" name="arrival" required placeholder="e.g. LAX">
+      </div>
+      <div class="form-group">
+        <button type="submit"  id="searchButton">Search Flight</button>
+      </div>
+    </form>
+
+    <div class="results" id="results"></div>
+    <div id="flightDetails"></div>
+  </div>
+  <script type="module" src="./js/search-flights.js"></script>
+</body>
+</html>

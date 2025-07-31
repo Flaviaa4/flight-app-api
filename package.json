@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+    "type": "module",
+
+  "description": "This project is a responsive web-based interface designed for searching flight information using the Aviation Stack API. It enables users to enter flight-related data and retrieve accurate and detailed flight records. The application is built using only HTML, CSS, and JavaScript (vanilla JS), making it lightweight and easy to understand for academic purposes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
