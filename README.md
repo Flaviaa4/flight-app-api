@@ -99,3 +99,7 @@ Expected output alternates `X-Served-By` between `web01` and `web02`, confirming
 Avoid hardcoding API keys:
 - Use `--env-file` for local development.
 - Pass environment variables using `-e` for deployments.
+
+## Link for the video
+
+https://youtu.be/J6UE-y-t2NQ
